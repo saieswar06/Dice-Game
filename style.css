@@ -1,0 +1,107 @@
+/* Kid-friendly playful background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #f9e6b3, #ffc1c1, #ffddaf);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container styling */
+#container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(255, 120, 100); /* Fun coral color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 90, 70); /* Bright hover color */
+}
+
+button:active {
+    background-color: rgb(200, 70, 50);
+}
+
+/* Input field styling */
+input {
+    font-size: 1.5rem;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+    border: 2px solid #ff9e9e;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Dice result styling */
+#diceResult {
+    margin: 10px;
+    font-size: 1.8rem;
+    color: #444;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Dice images layout and styling */
+#diceImages {
+    display: flex; /* Horizontal alignment */
+    gap: 15px; /* Space between dice */
+    justify-content: center; /* Center dice in the container */
+    align-items: center; /* Align dice vertically */
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+#diceImages img {
+    width: 70px; /* Larger, kid-friendly dice size */
+    height: 70px;
+    object-fit: contain;
+    border: 3px solid #ffcccb; /* Light pink border */
+    border-radius: 10px; /* Rounded corners for dice */
+    background-color: white; /* Optional background for dice */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Styling for h1 tag */
+h1 {
+    font-family: 'Comic Sans MS', cursive; /* Playful and kid-friendly font */
+    font-size: 3rem; /* Large, prominent size */
+    font-weight: bold;
+    color: #ffc861; /* Vibrant coral red */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px #42ff4b, 0 0 20px #006eff; /* Glowing effect */
+    margin: 20px 0;
+    animation: bounceGlow 3s infinite; /* Bouncing and glowing animation */
+}
+
+/* Animation for glowing and bouncing effect */
+@keyframes bounceGlow {
+    0%, 100% {
+        transform: translateY(0); /* Start and end in the same position */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px #42d9ff, 0 0 20px #0099ff;
+    }
+    50% {
+        transform: translateY(-10px); /* Moves up slightly */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 15px #4274ff, 0 0 30px #00aaff;
+    }
+}
